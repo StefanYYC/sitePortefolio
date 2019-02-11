@@ -1,0 +1,41 @@
+// Bouton Menu
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut;
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px;
+    background: #fff;
+    @include easeOut;
+  }
+
+  // Rotation du bouton
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      // Ligne 1 - Rotation
+      &:nth-child(1) {
+        //permet de cibler l'élément de la première cible
+        transform: rotate(45deg) translate(5px, 5px);
+        background: red;
+      }
+
+      // Ligne 2 - Cacher
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      // Ligne 3 - Rotation
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+        background: red;
+      }
+    }
+  }
+}
