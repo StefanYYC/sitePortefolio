@@ -1,0 +1,14 @@
+{
+  "name": "porte_folio_stefan",
+  "version": "1.0.0",
+  "description": "Site portefolio responsive",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Stefan Speter",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
