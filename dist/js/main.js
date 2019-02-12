@@ -12,6 +12,7 @@ menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   if (!showMenu) {
+    //si le menu n'est pas fermé (donc ouvert) alors on affiche tout
     menuBtn.classList.add("close");
     menu.classList.add("show");
     menuNav.classList.add("show");

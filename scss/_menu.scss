@@ -39,3 +39,99 @@
     }
   }
 }
+
+// Menu overlay
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+   // Pour toujours voir la première page quand on clique sur le menu
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+
+  &-branding,
+  &-nav {
+    //menu branding ici
+    display: flex; //Permet de les mettre en colonne
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%; //Sépare en deux
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: rgba(darken($primary-color,5),0.9); //Va mettre en gris foncé la colonne de droite
+    list-style: none; //retire les •
+    transform: translate3d(0,100%,0); //pr que ça descende d'en haut sinon ça vient d'en bas
+    @include easeOut;
+
+    &.show {
+      // Glisse du haut de l'écran
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  // Côté gauche
+  &-branding {
+    background: rgba($primary-color,0.9);
+    transform: translate3d(0,-100%,0);
+    @include easeOut;
+
+    &.show {
+      // Depuis le bas
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .portrait{
+        width:250px;
+        height:250px;
+        background: url('../img/portrait.jpg');
+        border-radius:50%;
+        border: solid 3px $secondary-color;
+       
+    }
+  }
+
+  .nav-item{
+    transform: translate3d(0px,0,0);
+    @include easeOut;
+
+    &.show{
+        transform: translate3d(0,0,0);
+        }
+    
+    &.current > a{
+        color:$secondary-color;
+    }
+    }
+
+    .nav-link{
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-weight: 300;
+        color:#fff;
+        text-decoration: none;
+        @include easeOut;
+
+        &:hover{
+            color:$secondary-color;
+        }
+    }
+}
+// Délais sur chaque item qui glissent de 0.1sec entre eux
+@for $x from 1 through 4{
+    .nav-item:neth-child(#{$x}){
+        transition-delay: $x * 0.1s;
+    }
+}
