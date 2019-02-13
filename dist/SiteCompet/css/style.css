@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+/* font-family: 'Open Sans', sans-serif; */
+/* bleu ciel : 08C8D7 */
+/* vert clair : 60A65F */
+/* bootsnip pr les formulaires etc */
+/* freepik pour des photos */ 
+
+body,html {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	
+}
+/* Liste compet */
+.comp{
+	font-size: 19px;
+}
+
+.titreComp{
+	font-weight: bold;
+}
+.contexte{
+	color:#1E90FF;
+}
+.zoom img{
+	width:800px;
+	height:300px;
+}
+.zoom img:hover{
+	width:900px;
+	height:500px;
+}
+/*Fin liste compet */
+p{
+	font-size: 20px;
+}
+body{
+	font-family: 'Open Sans', sans-serif; /* police donné à notre texte, si le système d'exploitation ne reconnait pas Open Sans il va alors charger sans serif qui est de base */
+}
+
+a, a:hover{
+	text-decoration: none; /* pas de traits sous les liens ni sur ceux soulignés (avec le hover)*/
+}
+
+.container-fluid{
+	padding: 0; /* retire les marges sur les côtés des images qui sont mises automatiquement */
+}
+
+.separator{
+	height: 3px; /* épaisseur du trait */
+	width:50%; /* longueur du trait */
+	border:none;
+	box-shadow: none;
+	background-color: #08C8D7;
+}
+
+/* header */
+.header{
+	background-color: #140000; /* couleur de fond : ici marron */
+	height: 70px; /* hauteur */
+	line-height: 70px; /* centré le contenu à la vertical */ 	
+}
+
+.logo{
+	color:#ffffff; /* je mets blanc pour le vert ressortir par rapport au vert */
+	text-transform: uppercase; /* on le met en majuscule */
+	font-weight: bold; /* on met la police en gras */
+	letter-spacing: 1px; /* écartement entre les lettres */
+	float:left;
+}
+
+.menu{
+	float:right; /* on va placer le menu à droite */ 
+}
+
+.menu a{
+	/* on va designer les liens */ 
+	color: #ffffff;
+	margin-right: 20px; 
+}
+
+
+
+.menu a:hover {
+	color:#2B3D54; /* va changer la couleur des onglets du menu lorsque l'on va passer le curseur dessus */
+}
+
+/* bannière */
+.banner{
+	width:100%; /* taille de 100% de la page */
+	max-width:100%; /* taille max */
+}
+
+.ban{
+	width: 100%;
+	max-width:100%;
+	position: relative;
+}
+
+.ban img{
+	width:100%;
+	max-width:100%;
+}
+
+.inner-banner{
+	position: absolute;
+	top:50%; /*va gèrer la hauteur du message de bienvenue*/
+	width:100%;
+	text-align:center;
+}
+
+.inner-banner h1{
+	color:#FAFAFA; /* effet d'ombrage blanc derrière le texte de Bienvenue */
+}
+
+.inner-banner .btn-custom{
+	background-color: #390000;
+	color:#FAFAFA;
+	;
+}
+.boutontest{
+	color:#FAFAFA;
+}
+
+.inner-banner .btn-custom:hover{
+	background-color: #ffffff; /*lorsque l'on survolle le bouton il devient foncer */
+	color:#FAFAFA; /* et l'écriture devient blanche */
+}
+
+/* about */
+#about{
+	text-align: center;
+	padding-top:2%;
+}
+
+.about article h2{
+	text-align: center;
+}
+.about article{
+	margin-top: 3%;
+	margin-bottom: 8%;
+}
+.about article p{
+	text-align: center;
+}
+/* portefolio */
+
+.portfolio{
+	background-color: #eeeeee;
+	margin :0px;
+	padding: 0px;
+	border: 0px;
+	
+}
+
+.portfolio img{
+	background-size: cover;
+	width: 285px;
+	height: 200px;
+	padding: 15px; /* pour séparer les images je mets une marge intérieur*/
+}
+
+#Portefolio{
+	text-align: center;
+}
+
+.portfolio .item-folio{
+	height: 280px;	
+	
+}
+
+
+/* contact */ 
+
+.footer{
+	padding-top:50 /* on met une marge extérieur */
+	background-color: #2C3E50;
+}
+
+.footer h4{
+	color:#ffffff;
+}
+
+.footer .btn-default:hover{ /* modif du bouton envoyer du formulaire de contact (j'ai repris celui déjà fais avant) */
+	background-color: #2C5B61; /*lorsque l'on survolle le bouton il devient foncer */
+	color:#ffffff; /* et l'écriture devient blanche */
+}
+
+.formulaireContact{
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+
+.pdf{
+	padding: 105px;
+}
+
+/* new footer */
+.footer-distributed{
+	background-color: #140000;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	margin-top: 200px;
+	padding: 45px 50px;
+	
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0; 
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-left .footer-links a:hover{
+	color:#2B3D54;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* Pour qu'il soit responsive */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+

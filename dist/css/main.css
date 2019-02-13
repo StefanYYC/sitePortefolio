@@ -43,13 +43,13 @@
     padding: 0;
     background: rgba(55, 55, 55, 0.9);
     list-style: none;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: rgba(68, 68, 68, 0.9);
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
@@ -150,8 +150,17 @@ main {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
-      main .icons a:hover {
-        color: #eece1a;
+      main .icons a:hover#fb {
+        color: #3b5998;
+        transition: all 0.5s ease-out; }
+      main .icons a:hover#tw {
+        color: #00aced;
+        transition: all 0.5s ease-out; }
+      main .icons a:hover#linkedin {
+        color: #4875B4;
+        transition: all 0.5s ease-out; }
+      main .icons a:hover#git {
+        color: #333;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -228,7 +237,7 @@ main {
 
 .btn-light {
   background: #c4c4c4;
-  color: #fff; }
+  color: black; }
 
 #main-footer {
   text-align: center;
@@ -284,4 +293,6 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes div {
+    font-size: 1.25rem; } }

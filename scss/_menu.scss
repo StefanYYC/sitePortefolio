@@ -68,28 +68,22 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: rgba(
-      darken($primary-color, 5),
-      0.9
-    ); //Va mettre en gris foncé la colonne de droite
+    background: rgba(darken($primary-color, 5),0.9); //Va mettre en gris foncé la colonne de droite
     list-style: none; //retire les •
-    transform: translate3d(
-      0,
-      100%,
-      0
-    ); //pr que ça descende d'en haut sinon ça vient d'en bas
+    transform: translate3d(0,-100%,0); //pr que ça descende d'en haut sinon ça vient d'en bas
     @include easeOut;
 
     &.show {
       // Glisse du haut de l'écran
       transform: translate3d(0, 0, 0);
     }
+    
   }
 
   // Côté gauche
   &-branding {
     background: rgba($primary-color, 0.9);
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, 100%, 0);
     @include easeOut;
 
     &.show {

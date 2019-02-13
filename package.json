@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Site portefolio responsive",
   "main": "index.js",
-  "homepage": "https://stefanyyc.github.io/SitePorteFolioResp",
+  "homepage": "https://stefanyyc.github.io/testsite",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -13,13 +13,5 @@
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/StefanYYC/SitePorteFolio.git"
-  },
-  "bugs": {
-    "url": "https://github.com/StefanYYC/SitePorteFolio/issues"
   }
 }

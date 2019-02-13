@@ -61,8 +61,22 @@ main {
 
       &:hover {
         //Comme si on faisait a:hover en css classique
-        color: $secondary-color;
-        @include easeOut();
+        &#fb{
+          color: #3b5998;
+          @include easeOut;
+        }
+        &#tw{
+          color:#00aced;
+          @include easeOut;
+        }
+        &#linkedin{
+          color:#4875B4;
+          @include easeOut;
+        }
+        &#git{
+          color:#333;
+          @include easeOut;
+        }
       }
     }
   }
@@ -116,17 +130,22 @@ main {
   grid-gap: 0.7rem; // pour ajouter des espaces
   grid-template-columns: repeat(3, 1fr);
 
-  img {
-    width: 100%;
-    border: 3px #fff solid;
-
-    &:hover {
-      opacity: 0.6;
-      border-color: $secondary-color;
-      @include easeOut;
+ 
+    img {
+      width: 100%;
+      border: 3px #fff solid; 
+  
+      &:hover {
+        opacity: 0.6;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
+      
     }
+
   }
-}
+
+
 
 // Page de contact
 
@@ -163,6 +182,7 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
@@ -177,7 +197,7 @@ main {
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);
-  color: #fff;
+  color: black;
 }
 #main-footer {
   text-align: center;
