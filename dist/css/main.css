@@ -60,10 +60,10 @@
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
-    transform: translate3d(0px, 0, 0);
+    transform: translate3d(0, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
-      transform: translate3d(0, 0, 0); }
+      transform: translate3d(100px, 0, 0); }
     .menu .nav-item.current > a {
       color: #eece1a; }
   .menu .nav-link {
@@ -157,7 +157,7 @@ main {
         color: #00aced;
         transition: all 0.5s ease-out; }
       main .icons a:hover#linkedin {
-        color: #4875B4;
+        color: #4875b4;
         transition: all 0.5s ease-out; }
       main .icons a:hover#git {
         color: #333;
@@ -202,6 +202,8 @@ main {
       opacity: 0.6;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+  .projects .zoom a img {
+    cursor: zoom-in; }
 
 .boxes {
   display: flex;
