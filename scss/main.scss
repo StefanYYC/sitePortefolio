@@ -194,14 +194,13 @@ main {
   background-color: #fff;
   border: none;
   color: black;
-  width: 100%;
+  width: 50%;
   height: 100px;
+  padding: 0px;
+  margin: auto;
   cursor: pointer;
   font-size: 20px;
-
-  &:hover {
-    color: set-text-color($secondary-color);
-  }
+  text-align: center;
 }
 
 // Styles bouton

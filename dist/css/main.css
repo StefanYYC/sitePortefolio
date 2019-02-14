@@ -237,12 +237,13 @@ main {
   background-color: #fff;
   border: none;
   color: black;
-  width: 100%;
+  width: 50%;
   height: 100px;
+  padding: 0px;
+  margin: auto;
   cursor: pointer;
-  font-size: 20px; }
-  .download:hover {
-    color: #000; }
+  font-size: 20px;
+  text-align: center; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
