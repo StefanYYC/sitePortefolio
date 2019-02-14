@@ -109,12 +109,24 @@ main {
 
   .job-1 {
     grid-area: job1;
+    &:hover {
+      transform: scale(1.2);
+      font-size: 20px;
+    }
   }
   .job-2 {
     grid-area: job2;
+    &:hover {
+      transform: scale(1.2);
+      font-size: 20px;
+    }
   }
   .job-3 {
     grid-area: job3;
+    &:hover {
+      transform: scale(1.2);
+      font-size: 20px;
+    }
   }
 
   .job {
@@ -143,8 +155,8 @@ main {
 
   .zoom {
     a {
-      img{
-        cursor:zoom-in; 
+      img {
+        cursor: zoom-in;
       }
     }
   }
