@@ -11,6 +11,7 @@
   "author": "Stefan Speter",
   "license": "MIT",
   "dependencies": {
+    "flag-icon-css": "^3.2.1",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
