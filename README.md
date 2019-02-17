@@ -13,7 +13,7 @@ Ce site me présente mes projets, mes ambitions et donne toutes les informations
 
 <hr>
 
-#English
+# English
 
 That's my portefolio developped in HTML CSS & JS. I used Sass to dev my CSS because it allows to do more things. <br>
 This website shows off my projects, my ambitions and give all the informations you need to contact me or to get my resume. <br>
