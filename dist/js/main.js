@@ -32,11 +32,7 @@ function toggleMenu() {
     // Set Menu State
     showMenu = false; //Ferme et cache le menu ainsi que les <a>
   }
+  
+  
 }
 
-// Sortir de l'image en appuyant sur espace
-function fermerESC(evt) {
-  if (evt.keyCode == 27) {//27 is the code for escape
-      windows.close();
-  }
-}
