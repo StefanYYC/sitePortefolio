@@ -19,7 +19,7 @@ That's my portefolio developped in HTML CSS & JS. I used Sass to dev my CSS beca
 This website shows off my projects, my ambitions and give all the informations you need to contact me or to get my resume. <br>
 
 # What I've learned
-• Use Sass
+• Use Sass <br>
 • Use Visual Studio Code <br>
 • Use git to upload, save and update my website on gitHub. <br>
 • Buy a domain name and publish my website on a host <br>
