@@ -144,7 +144,10 @@ header {
   color: #eece1a; }
 
 main {
+  position: absolute;
+  display: block;
   padding: 4rem;
+  height: 100%;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -163,9 +166,42 @@ main {
         color: #333;
         transition: all 0.5s ease-out; }
   main#home {
-    overflow: hidden; }
+    overflow: auto; }
     main#home h1 {
       margin-top: 20vh; }
+
+.box {
+  position: absolute;
+  margin-top: 40vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.box span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -30px;
+  animation: animate 2s infinite; }
+
+.box span:nth-child(1) {
+  animation-delay: -0.2s; }
+
+.box span:nth-child(2) {
+  animation-delay: -0.4s; }
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px); } }
 
 .about-info {
   display: grid;
@@ -270,11 +306,16 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .box {
+    margin-left: 25vh; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .box {
+    margin-top: 45vh;
+    margin-left: 20vh; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -283,11 +324,16 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
-  ul.menu-nav, div.menu-branding {
+    main .box {
+      margin-top: 65vh;
+      margin-left: 20vh; }
+  ul.menu-nav,
+  div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0; }
-    ul.menu-nav.show, div.menu-branding.show {
+    ul.menu-nav.show,
+    div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
     height: 75vh;
@@ -301,7 +347,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
@@ -314,6 +360,9 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+    main .box {
+      margin-top: 70vh;
+      margin-left: 15vh; }
   .projects {
     grid-template-columns: 1fr; }
   .boxes div {
