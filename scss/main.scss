@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "arrow";
 
 * {
   box-sizing: border-box;
@@ -50,7 +51,7 @@ header {
 
 main {
   position: absolute;
-  display:block;
+  display: block;
   padding: 4rem;
   height: 100%;
   min-height: calc(100vh - 60px); //Pour que le footer soit tjr en bas de page
@@ -87,45 +88,6 @@ main {
     h1 {
       margin-top: 20vh;
     }
-  }
-}
-
-.box {
-  position: absolute;
-  margin-top: 40vh;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-}
-.box span {
-  display: block;
-  
-  width: 50px;
-  height: 50px;
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
-  transform: rotate(45deg);
-  margin: -30px;
-  animation: animate 2s infinite;
-}
-.box span:nth-child(1) {
-  animation-delay: -0.2s;
-}
-.box span:nth-child(2) {
-  animation-delay: -0.4s;
-}
-
-@keyframes animate {
-  0% {
-    opacity: 0;
-    transform: rotate(45deg) translate(-20px, -20px);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(45deg) translate(-20px, -20px);
   }
 }
 .about-info {
