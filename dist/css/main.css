@@ -91,12 +91,17 @@
 .nav-item:neth-child(4) {
   transition-delay: 0.4s; }
 
+.arrow {
+  position: relative;
+  margin-left: 50%;
+  margin-top: 6.5%; }
+
 .arrow span {
   display: block;
   width: 50px;
   height: 50px;
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
+  border-bottom: 1px solid #eece1a;
+  border-right: 1px solid #eece1a;
   transform: rotate(45deg);
   margin: -30px;
   animation: animate 2s infinite; }
