@@ -3,7 +3,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
-const navItems = document.querySelectorAll("nav-item"); // Permet de choisir tous les boutons (Menu, a propos...)
+const navItems = document.querySelectorAll(".nav-item"); // Permet de choisir tous les boutons (Menu, a propos...)
 
 // Set Initial State of Menu
 let showMenu = false; //menu fermé
@@ -32,7 +32,21 @@ function toggleMenu() {
     // Set Menu State
     showMenu = false; //Ferme et cache le menu ainsi que les <a>
   }
-  
-  
 }
 
+// Même chose avec la flèche
+
+const center = document.querySelector(".arrow");
+
+let showArrow = false;
+
+center.addEventListener("click", toggleArrow);
+function toggleArrow() {
+  if (!showArrow) {
+    center.classList.add("close");
+    showArrow = true;
+  } else {
+    center.classList.remove("close");
+    showArrow = false;
+  }
+}
