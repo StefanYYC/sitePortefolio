@@ -2,7 +2,7 @@ $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
-$background-opacity: 0.9;
+$background-opacity: 0.8;
 
 @mixin easeOut {
   transition: all 0.5s ease-out; //Temps que l'icone devient entièrement jaune
@@ -25,8 +25,6 @@ $background-opacity: 0.9;
         height: 100%;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
-        
-
       }
     }
   }

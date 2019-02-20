@@ -45,8 +45,11 @@ function toggleArrow() {
   if (!showArrow) {
     center.classList.add("close");
     showArrow = true;
+
   } else {
     center.classList.remove("close");
     showArrow = false;
   }
 }
+
+
