@@ -1,10 +1,13 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+}
+
 .center {
-  width: 100%;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  margin: 0;
-  padding-top: 0;
+  width: 100%;
   transform: translate(-50%, -50%);
   background: $primary-color;
   box-sizing: border-box;
@@ -19,21 +22,6 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-  }
-  a.fermer {
-    position: absolute;
-    padding-top: 0;
-    top: 0px;
-    right: 0px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-
-    &:hover {
-      color: $secondary-color;
-    }
   }
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,12 +13,13 @@
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="../flag-icon-css-master/css/flag-icon.css" />
-    <title>Portefolio Stefan</title>
+    <title>Portfolio Stefan</title>
   </head>
 
   <body id="bg-img">
     <header>
-      <a href="eng/indexEng.html"> <!-- ajouter dist quand je veux faire les changements en local -->
+      <a href="eng/indexEng.html">
+        <!-- ajouter dist quand je veux faire les changements en local -->
         <div class="flag-icon flag-icon-gb"></div>
       </a>
       <div class="menu-btn">
@@ -47,6 +48,11 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="skills.html" class="nav-link">
+              Mes Compétences
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="contact.html" class="nav-link">
               Contact + CV
             </a>
@@ -57,24 +63,28 @@
 
     <main id="home">
       <div>
-      <h1 class="lg-heading">
-        <!-- large heading-->
-        Stefan <span class="text-secondary"> Speter </span>
-      </h1>
+        <h1 class="lg-heading">
+          <!-- large heading-->
+          Stefan <span class="text-secondary"> Speter </span>
+        </h1>
       </div>
       <div>
-      <h2 class="sm-heading">
-        <!-- small heading -->
-        Développeur Web En Devenir, Autodidacte, Passionné & Voyageur.<br />       
-      </h2>
-    </div>
+        <h2 class="sm-heading">
+          <!-- small heading -->
+          Développeur Web En Devenir, Autodidacte, Passionné & Voyageur.<br />
+        </h2>
+      </div>
       <div>
         <h2 class="sm-heading">
-          Vous allez pouvoir trouver sur ce site toutes les informations me concernant et ce que j'ai déjà pu faire comme projets, mon CV et en apprendre un peu plus sur moi.<br/><br/>
-          N'hésitez pas à cliquer sur les liens en dessous, particulièrement sur mon gitHub où vous pourrez trouver tous mes projets avec un readMe expliquant ce que j'ai fait, comment et ce que j'ai appris!  
-        <h2>      
-      </div> 
-      
+          Vous allez pouvoir trouver sur ce site toutes les informations me
+          concernant et ce que j'ai déjà pu faire comme projets, mon CV et en
+          apprendre un peu plus sur moi.<br /><br />
+          N'hésitez pas à cliquer sur les liens en dessous, particulièrement sur
+          mon gitHub où vous pourrez trouver tous mes projets avec un readMe
+          expliquant ce que j'ai fait, comment et ce que j'ai appris!
+        </h2>
+      </div>
+
       <div class="icons">
         <a id="ig" href="https://instagram.com/apodroo" target="_blank">
           <i class="fab fa-instagram fa-2x"></i>
@@ -100,62 +110,59 @@
           <i class="fab fa-github fa-2x"></i>
           <!-- grâce à font awesome-->
         </a>
-        
-        <!-- Flèche toggle -->
-        <button class="arrow" id="arrow"> 
-              <a href="https://www.google.com" target="_blank"></a>
-               <span></span>
-               <span></span>
-               <span></span>              
-        </button>  
-        
-        <!-- Skill bar compétences --> 
-        <div class="center" id="skill">
-          <h1>Compétences</h1>
-          <a class="fermer" href="index.html">X</a>
-          <div class="skillBox">
-            <p>HTML5</p>
-            <p>80%</p>
-            <div class="skill">
-              <div class="skill_level" style="width: 80%"></div>
-            </div>
+      </div>
+      <!-- Flèche toggle -->
+      <button class="arrow" id="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Skill bar compétences -->
+      <div class="center" id="skill">
+        <h1>Compétences</h1>
+        <a class="fermer" href="index.html">X</a>
+        <div class="skillBox">
+          <p>HTML5</p>
+          <p>80%</p>
+          <div class="skill">
+            <div class="skill_level" style="width: 80%"></div>
           </div>
-          <div class="skillBox">
-            <p>CSS3</p>
-            <p>60%</p>
-            <div class="skill">
-              <div class="skill_level" style="width: 60%"></div>
-            </div>
+        </div>
+        <div class="skillBox">
+          <p>CSS3</p>
+          <p>60%</p>
+          <div class="skill">
+            <div class="skill_level" style="width: 60%"></div>
           </div>
-          <div class="skillBox">
-            <p>JavaScript</p>
-            <p>30%</p>
-            <div class="skill">
-              <div class="skill_level" style="width: 30%"></div>
-            </div>
+        </div>
+        <div class="skillBox">
+          <p>JavaScript</p>
+          <p>30%</p>
+          <div class="skill">
+            <div class="skill_level" style="width: 30%"></div>
           </div>
-          <div class="skillBox">
-            <p>jQuery</p>
-            <p>10%</p>
-            <div class="skill">
-              <div class="skill_level" style="width: 10%"></div>
-            </div>
+        </div>
+        <div class="skillBox">
+          <p>jQuery</p>
+          <p>10%</p>
+          <div class="skill">
+            <div class="skill_level" style="width: 10%"></div>
           </div>
-        </div>        
-      </div>       
+        </div>
+      </div>
     </main>
-    
 
     <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-<!-- Script pour afficher les skills lorsque l'on clique sur la flèche-->
-   <script>
-      $('#skill').hide();
-      
-      jQuery(document).ready(function(){
-        $('#arrow').on('click',function(){
-          $('#skill').toggle();
-        })
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Script pour afficher les skills lorsque l'on clique sur la flèche-->
+    <script>
+      $("#skill").hide();
+
+      jQuery(document).ready(function() {
+        $("#arrow").on("click", function() {
+          $("#skill").toggle();
+        });
       });
     </script>
   </body>

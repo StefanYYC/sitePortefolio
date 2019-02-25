@@ -94,7 +94,7 @@
 .arrow {
   border: 0px;
   background: none;
-  position: relative;
+  position: static;
   margin-left: 30%;
   margin-top: 10%;
   cursor: pointer; }
@@ -107,6 +107,8 @@
     transform: rotate(45deg);
     margin: -30px;
     animation: animate 2s infinite; }
+  .arrow.close {
+    transform: rotate(180deg); }
   .arrow .box span:nth-child(1) {
     animation-delay: -0.2s; }
   .arrow .box span:nth-child(2) {
@@ -121,16 +123,16 @@
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(-20px, -20px); } }
-  .arrow.close {
-    transform: rotate(180deg); }
+
+#skills {
+  display: flex;
+  flex-direction: column; }
 
 .center {
-  width: 100%;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  margin: 0;
-  padding-top: 0;
+  width: 100%;
   transform: translate(-50%, -50%);
   background: #444;
   box-sizing: border-box;
@@ -144,18 +146,6 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center; }
-  .center a.fermer {
-    position: absolute;
-    padding-top: 0;
-    top: 0px;
-    right: 0px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff; }
-    .center a.fermer:hover {
-      color: #eece1a; }
 
 .skillBox {
   box-sizing: border-box;
@@ -198,7 +188,8 @@ body {
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    position: top right; }
     body#bg-img::after {
       content: "";
       position: absolute;

@@ -1,7 +1,7 @@
 .arrow {
   border: 0px;
   background: none;
-  position: relative;
+  position: static;
   margin-left: 30%;
   margin-top: 10%;
   cursor: pointer;
@@ -15,6 +15,9 @@
     transform: rotate(45deg);
     margin: -30px;
     animation: animate 2s infinite;
+  }
+  &.close {
+    transform: rotate(180deg);
   }
   .box span:nth-child(1) {
     animation-delay: -0.2s;
@@ -37,7 +40,5 @@
     }
   }
 
-  &.close {
-    transform: rotate(180deg);
-  }
+  
 }
