@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
@@ -13,10 +19,11 @@
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="../flag-icon-css-master/css/flag-icon.css" />
+
     <title>Mes Compétences</title>
   </head>
 
-  <body>
+  <body id="skills">
     <header>
       <a href="../eng/skillsEng.html">
         <div class="flag-icon flag-icon-gb"></div>
@@ -44,7 +51,7 @@
           <li class="nav-item">
             <a href="work.html" class="nav-link">
               Mes Projets
-            </a>            
+            </a>
           </li>
           <li class="nav-item">
             <a href="skills.html" class="nav-link">
@@ -59,46 +66,153 @@
         </ul>
       </nav>
     </header>
-    <main id="skills">
-         <!-- Skill bar compétences -->
-      <div class="center" id="skill">
-            <h1>Compétences</h1>            
-            <div class="skillBox">
-              <p>HTML5</p>
-              <p>80%</p>
-              <div class="skill">
-                <div class="skill_level" style="width: 80%"></div>
+
+    <main>
+      <section class="row">
+        <div class="col-lg-12 para">
+          <p>
+            Pour apprendre de manière efficace j'ai décidé de mixer les cours à
+            la pratique. <br />
+            J'ai donc commencé à suivre énormément de tuto sur youtube,
+            <a href="https://www.freecodecamp.org" target="_blank">freecodecamp</a>,
+            <a href="https://openclassrooms.com/fr/paths" target="_blank">OpenClassRooms</a>
+            afin de faire valoir mon travail mais également de traviller sur des
+            projets plus concrets et qui pour certains me permettent même
+            d'obtenir une certification.
+          </p>
+          <p>Ci-contre vous trouverez un tableau récapitulant mes différentes certifications ainsi qu'un lien vers le certificat (il faudra rentrer mon Nom -Speter- pour l'afficher)
+          </p>
+        </div>
+      </section>
+
+      
+      <div class="container-fluid">
+        <div class="row">
+              <div class="col-md-3">
+                  <form action="#" method="get">
+                      <div class="input-group">
+                          <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
+                          <input class="form-control" id="system-search" name="q" placeholder="Tapez pour filtrer.." required>
+                          <span class="input-group-btn">
+                              <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                          </span>
+                      </div>
+                  </form>
               </div>
-            </div>
-            <div class="skillBox">
-              <p>CSS3</p>
-              <p>60%</p>
-              <div class="skill">
-                <div class="skill_level" style="width: 60%"></div>
-              </div>
-            </div>
-            <div class="skillBox">
-              <p>JavaScript</p>
-              <p>30%</p>
-              <div class="skill">
-                <div class="skill_level" style="width: 30%"></div>
-              </div>
-            </div>
-            <div class="skillBox">
-              <p>jQuery</p>
-              <p>10%</p>
-              <div class="skill">
-                <div class="skill_level" style="width: 10%"></div>
-              </div>
-            </div>
+          <div class="col-md-9 col-lg-12">
+             <table class="table table-list-search table-striped tableau">
+                          <thead>
+                              <tr>
+                                  <th>Nom Certification</th>
+                                  <th>Date</th>  
+                                  <th>ID Certification</th>                                
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td><a href="https://openclassrooms.com/fr/course-certificates/1150065626" target="_blank">Créez un site moderne et professionnel avec Wordpress 5</a></td></td>
+                                  <td><span class="date"> 27 Février 2019</span></td>
+                                  <td>1150065626</td>
+                              </tr>
+                              <tr>
+                                  <td><a href="https://openclassrooms.com/fr/course-certificates/5482739952" target="_blank">Apprenez à apprendre</a></td>
+                                  <td><span class="date">25 Février 2019</span></td>
+                                  <td>5482739952</td>                                
+                              </tr>
+                              <tr>
+                                  <td><a href="https://openclassrooms.com/fr/course-certificates/7842304537" target="_blank">Apprenez à créer votre site web avec HTML5 et CSS3</a></td>
+                                  <td><span class="date">25 Février 2019</span></td>
+                                  <td>7842304537</td>                                  
+                              </tr>                              
+                              <tr>
+                                <td><a href="https://openclassrooms.com/fr/course-certificates/2528245830" target="_blank">Initiez-vous au Design Thinking</a></td>
+                                <td><span class="date">20 Février 2019</span></td>
+                                <td>2528245830</td>
+                              </tr>
+                              <tr>
+                                <td><a href="https://openclassrooms.com/fr/course-certificates/5706655819">Comprendre le web</a></td>
+                                <td><span class="date">18 Janvier 2018</span></td>
+                                <td>5706655819</td>
+                              </tr>
+                              <tr>
+                                <td><a href="https://openclassrooms.com/fr/course-certificates/9543348222">Mettez en place un système de veille informationnelle</a></td>
+                                <td><span class="date">17 Janvier 2018</span></td>
+                                <td>9543348222</td>
+                              </tr>
+                          </tbody>
+                      </table>   
           </div>
-
-
-
+        </div>
+      </div>
     </main>
+
     <footer id="main-footer">
-            Copyright &copy; 2019
+      Copyright &copy; 2019
     </footer>
     <script src="js/main.js"></script>
-    </body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function() {
+    var activeSystemClass = $('.list-group-item.active');
+
+    //something is entered in search form
+    $('#system-search').keyup( function() {
+       var that = this;
+        // affect all table rows on in systems table
+        var tableBody = $('.table-list-search tbody');
+        var tableRowsClass = $('.table-list-search tbody tr');
+        $('.search-sf').remove();
+        tableRowsClass.each( function(i, val) {
+        
+            //Lower text for case insensitive
+            var rowText = $(val).text().toLowerCase();
+            var inputText = $(that).val().toLowerCase();
+            if(inputText != '')
+            {
+                $('.search-query-sf').remove();
+                tableBody.prepend('<tr class="search-query-sf"><td colspan="6"><strong>Searching for: "'
+                    + $(that).val()
+                    + '"</strong></td></tr>');
+            }
+            else
+            {
+                $('.search-query-sf').remove();
+            }
+
+            if( rowText.indexOf( inputText ) == -1 )
+            {
+                //hide rows
+                tableRowsClass.eq(i).hide();
+                
+            }
+            else
+            {
+                $('.search-sf').remove();
+                tableRowsClass.eq(i).show();
+            }
+        });
+        //all tr elements are hidden
+        if(tableRowsClass.children(':visible').length == 0)
+        {
+            tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">No entries found.</td></tr>');
+        }
+    });
+});
+    </script>
+
+  </body>
 </html>
