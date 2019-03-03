@@ -2,21 +2,35 @@
   background-color: #444;
 }
 .para {
-  background-color: grey;
+  background-color: #444;
   font-size: 20px;
-  margin: 30px 0 10px 0;
-  color: black;
-  border: 2px solid black;
+  margin: 30px 0 10px 28px;
+  color: darkwhite;
+  padding: 20px 20px 20px 20px;
 
   a {
-    color: red;
+    color: black;
   }
 }
 .tableau {
   margin: 30px 0 0 0;
   background-color: grey;
-  td:hover {
-    background-color: red;
+  td:last-child {
+    font-weight: bold;
+  }
+  tr:hover {
+    background-image: linear-gradient(
+      to right,
+      #adb2b9,
+      #99a7ac,
+      #889c9a,
+      #7e8f85,
+      #7c816f
+    );
+    animation: barre 5s linear;
+    td:last-child {
+      color: black;
+    }
   }
 }
 
@@ -25,4 +39,77 @@
 }
 #system-search {
   margin-top: 20px;
+}
+.link {
+  /* RESET */
+  text-decoration: none;
+  line-height: 1;
+
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 5px 5px;
+  overflow: hidden;
+  color: #333;
+  vertical-align: bottom;
+  transition: color 0.3s ease-out;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100% - 2px));
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(60deg, #727e88 0%, #99af82 100%);
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover {
+  color: white;
+}
+.link:hover::before {
+  transform: translateY(0);
+  transition: transform 0.25s ease-out;
+}
+.link-2 {
+  /* RESET */
+  text-decoration: none;
+  line-height: 1;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 5px 5px;
+  overflow: hidden;
+  color: WHITE;
+  vertical-align: bottom;
+  transition: color 0.3s ease-out;
+}
+
+.link-2::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100% - 2px));
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(60deg, #788896 0%, #c2e59c 100%);
+  transition: transform 0.25s ease-out;
+}
+
+.link-2:hover {
+  color: black;
+}
+.link-2:hover::before {
+  transform: translateY(0);
+  transition: transform 0.25s ease-out;
+}
+
+.black {
+  background-color: rgba(73, 73, 73, 0.5);
 }

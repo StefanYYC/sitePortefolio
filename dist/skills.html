@@ -69,18 +69,21 @@
 
     <main>
       <section class="row">
-        <div class="col-lg-5 para">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 para">
           <p>
-            Pour apprendre de manière efficace j'ai décidé de mixer les cours à
-            la pratique. <br />
-            J'ai donc commencé à suivre énormément de tuto sur youtube,
-            <a href="https://www.freecodecamp.org" target="_blank">freecodecamp</a>,
-            <a href="https://openclassrooms.com/fr/paths" target="_blank">OpenClassRooms</a>
-            afin de faire valoir mon travail mais également de traviller sur des
-            projets plus concrets et qui pour certains me permettent même
-            d'obtenir une certification.
+            Etant passioné par le développement front-end, je ne cesse d'apprendre et de pratiquer tous les jours.
+            Mes principales sources d'informations sont :
+            <ul>
+              <li>
+                <a class="link" data-toggle="tooltip" title="Voir mon parcours" data-placement="right" href="https://www.freecodecamp.org/stefanyyc" target="_blank">FreeCodeCamp</a>
+              </li>
+              <li>
+                <a class="link" data-toggle="tooltip" title="Voir mes certificats" data-placement="right" href="https://openclassrooms.com/fr/paths" target="_blank">OpenClassRooms</a>
+              </li>
+            </ul>
+            
           </p>
-          <p>Ci-contre vous trouverez un tableau récapitulant mes différentes certifications ainsi qu'un lien vers le certificat (il faudra rentrer mon Nom -Speter- pour l'afficher)
+          <p>Ci-contre vous trouverez un tableau récapitulant mes différentes certifications ainsi qu'un lien vers le certificat (il faudra rentrer mon Nom -Speter- pour l'afficher).
           </p>
         </div>
       </section>
@@ -100,7 +103,7 @@
                   </form>
               </div>
           <div class="col-md-9 col-lg-12">
-             <table class="table table-list-search table-striped tableau">
+             <table class="table table-list-search tableau">
                           <thead>
                               <tr>
                                   <th>Nom Certification</th>
@@ -109,33 +112,33 @@
                               </tr>
                           </thead>
                           <tbody>
-                              <tr>
-                                  <td><a href="https://openclassrooms.com/fr/course-certificates/1150065626" target="_blank">Créez un site moderne et professionnel avec Wordpress 5</a></td></td>
+                              <tr class="black">
+                                  <td><a class="link-2" href="https://openclassrooms.com/fr/course-certificates/1150065626" target="_blank">Créez un site moderne et professionnel avec Wordpress 5</a></td></td>
                                   <td><span class="date"> 27 Février 2019</span></td>
                                   <td>1150065626</td>
                               </tr>
                               <tr>
-                                  <td><a href="https://openclassrooms.com/fr/course-certificates/5482739952" target="_blank">Apprenez à apprendre</a></td>
+                                  <td><a class="link-2" href="https://openclassrooms.com/fr/course-certificates/5482739952" target="_blank">Apprenez à apprendre</a></td>
                                   <td><span class="date">25 Février 2019</span></td>
                                   <td>5482739952</td>                                
                               </tr>
-                              <tr>
-                                  <td><a href="https://openclassrooms.com/fr/course-certificates/7842304537" target="_blank">Apprenez à créer votre site web avec HTML5 et CSS3</a></td>
+                              <tr class="black">
+                                  <td><a class="link-2" href="https://openclassrooms.com/fr/course-certificates/7842304537" target="_blank">Apprenez à créer votre site web avec HTML5 et CSS3</a></td>
                                   <td><span class="date">25 Février 2019</span></td>
                                   <td>7842304537</td>                                  
                               </tr>                              
                               <tr>
-                                <td><a href="https://openclassrooms.com/fr/course-certificates/2528245830" target="_blank">Initiez-vous au Design Thinking</a></td>
+                                <td><a class="link-2" href="https://openclassrooms.com/fr/course-certificates/2528245830" target="_blank">Initiez-vous au Design Thinking</a></td>
                                 <td><span class="date">20 Février 2019</span></td>
                                 <td>2528245830</td>
                               </tr>
-                              <tr>
-                                <td><a href="https://openclassrooms.com/fr/course-certificates/5706655819">Comprendre le web</a></td>
+                              <tr class="black">
+                                <td><a class="link-2" href="https://openclassrooms.com/fr/course-certificates/5706655819">Comprendre le web</a></td>
                                 <td><span class="date">18 Janvier 2018</span></td>
                                 <td>5706655819</td>
                               </tr>
                               <tr>
-                                <td><a href="https://openclassrooms.com/fr/course-certificates/9543348222">Mettez en place un système de veille informationnelle</a></td>
+                                <td><a class="link-2" href="https://openclassrooms.com/fr/course-certificates/9543348222">Mettez en place un système de veille informationnelle</a></td>
                                 <td><span class="date">17 Janvier 2018</span></td>
                                 <td>9543348222</td>
                               </tr>
@@ -165,7 +168,13 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    
     <script>
+      /* Tooltipe */
+      $(function(){
+        $('a').tooltip();
+      })
+      /* Filter */
       $(document).ready(function() {
     var activeSystemClass = $('.list-group-item.active');
 
