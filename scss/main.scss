@@ -79,6 +79,10 @@ main {
           color: #333;
           @include easeOut;
         }
+        &#freecodecamp{
+          color: green;
+          @include easeOut;
+        }
       }
     }
   }
