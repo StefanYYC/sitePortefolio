@@ -291,10 +291,13 @@ main {
         color: #4875b4;
         transition: all 0.5s ease-out; }
       main .icons a:hover#git {
-        color: #333;
+        color: #333333;
         transition: all 0.5s ease-out; }
       main .icons a:hover#freecodecamp {
         color: green;
+        transition: all 0.5s ease-out; }
+      main .icons a:hover#codepen {
+        color: rgba(0, 0, 0, 0.596);
         transition: all 0.5s ease-out; }
   main#home {
     overflow: auto; }
