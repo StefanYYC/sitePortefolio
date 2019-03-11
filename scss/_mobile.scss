@@ -43,7 +43,7 @@
       transform: translate3d(0, 0, 0);
     }
   }
-
+  
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
@@ -92,7 +92,12 @@
       margin-left: 15vh;
     }
   }
-
+  .para {
+    font-size: 12px;
+  }
+  .tableau {
+    font-size: 10px;
+  }
   .projects {
     grid-template-columns: 1fr;
   }

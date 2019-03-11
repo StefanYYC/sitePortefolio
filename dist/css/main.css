@@ -475,6 +475,10 @@ main {
     main .box {
       margin-top: 70vh;
       margin-left: 15vh; }
+  .para {
+    font-size: 12px; }
+  .tableau {
+    font-size: 10px; }
   .projects {
     grid-template-columns: 1fr; }
   .boxes div {
