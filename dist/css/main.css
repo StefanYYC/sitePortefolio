@@ -124,20 +124,29 @@
     opacity: 0;
     transform: rotate(45deg) translate(-20px, -20px); } }
 
-#skills {
-  background-color: #444; }
+.about-hr {
+  animation-name: slidein;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; }
+
+@keyframes slidein {
+  from {
+    width: 100%; }
+  to {
+    width: 50%; } }
 
 .para {
-  background-color: #444;
   font-size: 20px;
+  font-family: "Merriweather", serif;
   margin: 30px 0 10px 28px;
-  color: darkwhite;
   padding: 20px 20px 20px 20px; }
-  .para a {
-    color: black; }
+  .para h3 {
+    color: #eece1a !important;
+    padding-bottom: 10px; }
 
 .tableau {
   margin: 30px 0 0 0;
+  font-size: 20px;
   background-color: grey; }
   .tableau td:last-child {
     font-weight: bold; }
@@ -153,6 +162,9 @@
 #system-search {
   margin-top: 20px; }
 
+li {
+  padding-bottom: 10px; }
+
 .link {
   /* RESET */
   text-decoration: none;
@@ -162,7 +174,6 @@
   display: inline-block;
   padding: 5px 5px;
   overflow: hidden;
-  color: #333;
   vertical-align: bottom;
   transition: color 0.3s ease-out; }
 
@@ -237,7 +248,7 @@ body {
     position: top right; }
     body#bg-img::after {
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 100%;

@@ -19,7 +19,7 @@ $background-opacity: 0.8;
       &::after {
         //pareil que si on met .overlay : ça va se faire après le bg-img
         content: "";
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0; // pour commencer en haut à droite de l'écran
         width: 100%;
