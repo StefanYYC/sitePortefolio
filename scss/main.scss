@@ -79,11 +79,11 @@ main {
           color: rgba(51, 51, 51, 1);
           @include easeOut;
         }
-        &#freecodecamp{
+        &#freecodecamp {
           color: green;
           @include easeOut;
         }
-        &#codepen{
+        &#codepen {
           color: rgba(0, 0, 0, 0.596);
           @include easeOut;
         }
@@ -239,6 +239,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
+  line-height: 20px;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
