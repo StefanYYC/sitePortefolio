@@ -35,7 +35,7 @@ function toggleMenu() {
 }
 
 // Même chose avec la flèche
-
+/*
 const center = document.querySelector(".arrow");
 
 let showArrow = false;
@@ -45,11 +45,9 @@ function toggleArrow() {
   if (!showArrow) {
     center.classList.add("close");
     showArrow = true;
-
   } else {
     center.classList.remove("close");
     showArrow = false;
   }
 }
-
-
+*/
