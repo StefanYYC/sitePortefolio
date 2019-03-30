@@ -242,7 +242,7 @@ main {
   line-height: 20px;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
-  height: 60px;
+  height: auto;
 }
 
 @import "mobile";

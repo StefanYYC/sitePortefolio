@@ -415,7 +415,7 @@ main {
   line-height: 20px;
   background: #2b2b2b;
   color: #fff;
-  height: 60px; }
+  height: auto; }
 
 @media screen and (min-width: 1171px) {
   .projects {
