@@ -47,7 +47,7 @@ header {
 }
 
 .text-secondary {
-  color: $secondary-color;
+  color: $secondary-color !important;
 }
 
 main {
@@ -116,45 +116,24 @@ main {
     grid-area: bio;
     font-size: 1.5rem;
   }
-
- 
-  .job-1 {
-    grid-area: job1;
-    &:hover {
-      transform: scale(1.2);
-      font-size: 20px;
-    }
-  }
-  .job-2 {
-    grid-area: job2;
-    &:hover {
-      transform: scale(1.2);
-      font-size: 20px;
-    }
-  }
-  .job-3 {
-    grid-area: job3;
-    &:hover {
-      transform: scale(1.2);
-      font-size: 20px;
-    }
-  }
-  div[class*='job-']{
-      grid-area: job3;
-      &:hover {
-        transform: scale(1.2);
-        font-size: 20px;
-      }
-    }
+}
+.jobzoom:hover{
+  transform: scale(1.2);
+  font-size: 22px;
+  z-index: 10;
+  background-color: black;
   
-
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+  ~ p{
+    color:red;
   }
+
 }
 
+.job {
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+}
 
 // Projets
 .projects {

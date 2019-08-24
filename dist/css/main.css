@@ -222,6 +222,8 @@ li {
   color: WHITE;
   vertical-align: bottom;
   transition: color 0.3s ease-out; }
+  .link-2.about-link {
+    font-size: 25px; }
 
 .link-2::before {
   content: "";
@@ -296,7 +298,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #eece1a !important; }
 
 main {
   padding: 4rem;
@@ -342,30 +344,19 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-    .about-info .job-1:hover {
-      transform: scale(1.2);
-      font-size: 20px; }
-  .about-info .job-2 {
-    grid-area: job2; }
-    .about-info .job-2:hover {
-      transform: scale(1.2);
-      font-size: 20px; }
-  .about-info .job-3 {
-    grid-area: job3; }
-    .about-info .job-3:hover {
-      transform: scale(1.2);
-      font-size: 20px; }
-  .about-info div[class*='job-'] {
-    grid-area: job3; }
-    .about-info div[class*='job-']:hover {
-      transform: scale(1.2);
-      font-size: 20px; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+
+.jobzoom:hover {
+  transform: scale(1.2);
+  font-size: 22px;
+  z-index: 10;
+  background-color: black; }
+  .jobzoom:hover ~ p {
+    color: red; }
+
+.job {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #eece1a 5px solid; }
 
 .projects {
   display: grid;
