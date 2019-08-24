@@ -345,18 +345,28 @@ main {
     grid-area: bio;
     font-size: 1.5rem; }
 
+.jobzoom {
+  opacity: 1; }
+
 .jobzoom:hover {
   transform: scale(1.2);
   font-size: 22px;
   z-index: 10;
-  background-color: black; }
-  .jobzoom:hover ~ p {
-    color: red; }
+  background-color: #b6adac;
+  transition: 1s ease-in; }
+  .jobzoom:hover p,
+  .jobzoom:hover h3 {
+    color: black; }
+  .jobzoom:hover h4 {
+    color: #333333 !important; }
 
 .job {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid; }
+  .job p,
+  .job ul {
+    font-size: 20px; }
 
 .projects {
   display: grid;

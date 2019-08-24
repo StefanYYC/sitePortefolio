@@ -117,22 +117,33 @@ main {
     font-size: 1.5rem;
   }
 }
-.jobzoom:hover{
+.jobzoom {
+  opacity: 1;
+}
+.jobzoom:hover {
   transform: scale(1.2);
   font-size: 22px;
   z-index: 10;
-  background-color: black;
-  
-  ~ p{
-    color:red;
-  }
+  background-color: #b6adac;
+  transition: 1s ease-in;
 
+  p,
+  h3 {
+    color: black;
+  }
+  h4 {
+    color: #333333 !important;
+  }
 }
 
 .job {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
+  p,
+  ul {
+    font-size: 20px;
+  }
 }
 
 // Projets
