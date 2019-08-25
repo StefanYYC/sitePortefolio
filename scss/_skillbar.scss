@@ -89,6 +89,10 @@ li {
   color: WHITE;
   vertical-align: bottom;
   transition: color 0.3s ease-out;
+
+  &.about-link {
+    font-size: 25px;
+  }
 }
 
 .link-2::before {
