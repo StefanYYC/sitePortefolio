@@ -1,3 +1,205 @@
+
+@import "config";
+@import "menu";
+@import "skillbar";
+@import "about";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include background();
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+// Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 6rem; //1 rem = 16px
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color !important;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+  min-height: calc(100vh - 60px); //Pour que le footer soit tjr en bas de page
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        //Comme si on faisait a:hover en css classique
+        &#fb {
+          color: #3b5998;
+          @include easeOut;
+        }
+        &#ig {
+          color: #e90dc4;
+          @include easeOut;
+        }
+        &#linkedin {
+          color: #4875b4;
+          @include easeOut;
+        }
+        &#git {
+          color: rgba(51, 51, 51, 1);
+          @include easeOut;
+        }
+        &#freecodecamp {
+          color: green;
+          @include easeOut;
+        }
+        &#codepen {
+          color: rgba(0, 0, 0, 0.596);
+          @include easeOut;
+        }
+      }
+    }
+  }
+  &#home {
+    overflow: auto;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+}
+
+// Projets
+.projects {
+  display: grid;
+  grid-gap: 0.7rem; // pour ajouter des espaces
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.6;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+
+  .zoom {
+    a {
+      img {
+        cursor: zoom-in;
+      }
+    }
+  }
+}
+
+// Page de contact
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem; //1.5 pour haut et bas et 2.5 pr gauche et droite
+    margin-bottom: 3rem; //pour quand ils sont au dessus l'un de l'autre
+    @include easeOut;
+
+    &:hover {
+      //pour mettre la taille plus petite quand on met le curseur dessus
+      padding: 0.5rem 1.5rem;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
+
+.download {
+  border: none;
+  color: black;
+  width: 50%;
+  height: 100px;
+  padding: 0px;
+  margin: auto;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+// Styles bouton
+
+.btn {
+  display: block; //pour les afficher en dessous de l'autre
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: black;
+}
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  line-height: 20px;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: auto;
+}
+
+@import "mobile";
+=======
 @import "config";
 @import "menu";
 @import "skillbar";
@@ -262,3 +464,4 @@ main {
 }
 
 @import "mobile";
+
