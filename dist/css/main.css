@@ -192,8 +192,7 @@ li {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio"
- "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -330,59 +329,6 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: #eece1a 3px solid; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
-
-.dark-screen {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  background: black;
-  pointer-events: none;
-  transition: 0.76s;
-  opacity: 0; }
-
-.job:hover ~ .dark-screen {
-  visibility: visible;
-  opacity: 0.6; }
-
-.job {
-  background: #515151;
-  padding: 0.5rem;
-  border-bottom: #eece1a 5px solid; }
-  .job p,
-  .job ul {
-    font-size: 20px; }
-
-.jobzoom {
-  opacity: 1; }
-
-.jobzoom:hover {
-  transform: scale(1.2);
-  font-size: 22px;
-  z-index: 10;
-  background-color: #b6adac;
-  transition: 1s ease-in; }
-  .jobzoom:hover p,
-  .jobzoom:hover h3 {
-    color: black; }
-  .jobzoom:hover h4 {
-    color: #333333 !important; }
-
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -451,71 +397,3 @@ main {
   background: #2b2b2b;
   color: #fff;
   height: auto; }
-
-@media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); }
-  .box {
-    margin-left: 25vh; } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
-    grid-template-columns: repeat(3, 1fr); }
-  .box {
-    margin-top: 45vh;
-    margin-left: 20vh; } }
-
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-    main .box {
-      margin-top: 65vh;
-      margin-left: 20vh; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
-      width: 150px;
-      height: 150px; }
-  .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; }
-  .projects {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media screen and (max-width: 500px) {
-  main {
-    padding: 2rem; }
-    main #home h1 {
-      margin-top: 10vh; }
-    main .lg-heading {
-      margin-top: 1rem;
-      font-size: 5rem; }
-    main .box {
-      margin-top: 70vh;
-      margin-left: 15vh; }
-  .para {
-    font-size: 12px; }
-  .tableau {
-    font-size: 10px; }
-  .projects {
-    grid-template-columns: 1fr; }
-  .boxes div {
-    font-size: 1.25rem; } }
