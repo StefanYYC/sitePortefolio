@@ -87,6 +87,10 @@ main {
           color: rgba(0, 0, 0, 0.596);
           @include easeOut;
         }
+        &#gitlab {
+          color: #e24329;
+          @include easeOut;
+        }
       }
     }
   }
