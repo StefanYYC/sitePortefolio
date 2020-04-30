@@ -13,7 +13,7 @@
   "dependencies": {
     "flag-icon-css": "^3.2.1",
     "gh-pages": "^2.0.1",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.0"
   }
 }
